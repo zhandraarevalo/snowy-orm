@@ -1,0 +1,28 @@
+{
+  "name": "snowy-orm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "keywords": [
+    "ORM",
+    "TypeScript",
+    "MySQL",
+    "PostgreSQL"
+  ],
+  "author": "Zhandra Arevalo",
+  "license": "ISC",
+  "dependencies": {
+    "js-convert-case": "^4.2.0",
+    "mysql2": "^3.6.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@types/uuid": "^9.0.7",
+    "typescript": "^5.2.2"
+  }
+}
