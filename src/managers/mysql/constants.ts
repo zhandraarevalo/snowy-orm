@@ -1,4 +1,4 @@
-import { IColumns } from "@utils/interfaces";
+import { IColumns } from "./../../utils/interfaces";
 
 export const DEFAULT_ATTRIBUTES: IColumns = {
   createdAt: {

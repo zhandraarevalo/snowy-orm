@@ -1,4 +1,4 @@
-import { IMySQLConfig, IPostgreSQLConfig } from '@utils/interfaces';
+import { IMySQLConfig } from './../utils/interfaces';
 import { MySQL, MySQLConnection, MySQLTableManager } from './mysql';
 
 class TableManagerClass {

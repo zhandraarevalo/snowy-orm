@@ -1,5 +1,4 @@
 export interface IColumn {
-  // [key: string]: any;
   type: string;
   required?: boolean;
   unique?: boolean;

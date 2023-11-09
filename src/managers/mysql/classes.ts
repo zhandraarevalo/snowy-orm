@@ -1,7 +1,7 @@
 import { toCamelCase, toSnakeCase } from 'js-convert-case';
 import mysql, { Connection } from 'mysql2/promise';
 import { v4 as uuid } from 'uuid';
-import { IColumn, IColumns, IMySQLConfig } from '@utils/interfaces';
+import { IColumn, IColumns, IMySQLConfig } from './../../utils/interfaces';
 import { DEFAULT_ATTRIBUTES } from './constants';
 
 const textTypes = ['char', 'varchar', 'text'];

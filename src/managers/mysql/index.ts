@@ -4,7 +4,7 @@ import {
   MySQL as MySQLClass,
   StoredTables as StoredTablesClass,
 } from './classes';
-import { IRecordTables } from '@utils/interfaces';
+import { IRecordTables } from './../../utils/interfaces';
 
 const MySQL = new MySQLClass();
 const StoredTables = new StoredTablesClass();
