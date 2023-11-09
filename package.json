@@ -1,9 +1,9 @@
 {
   "name": "snowy-orm",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc"
