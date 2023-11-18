@@ -1,6 +1,6 @@
 {
   "name": "snowy-orm",
-  "version": "1.0.6",
+  "version": "1.0.14",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -17,13 +17,17 @@
   "author": "Zhandra Arevalo",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
+    "joi": "^17.11.0",
     "js-convert-case": "^4.2.0",
     "mysql2": "^3.6.3",
-    "uuid": "^9.0.1",
-    "typescript": "^5.2.2"
+    "pg": "^8.11.3",
+    "typescript": "^5.2.2",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
+    "@types/pg": "^8.10.9",
     "@types/uuid": "^9.0.7"
   }
 }

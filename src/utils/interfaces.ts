@@ -1,4 +1,16 @@
-export interface IColumn {
+export interface IDBConfig {
+  host: string;
+  port: number;
+  database: string;
+  user: string;
+  password: string;
+}
+
+export interface IObject {
+  [key: string]: any;
+}
+
+export interface IColumn extends IObject {
   type: string;
   required?: boolean;
   unique?: boolean;
@@ -10,24 +22,13 @@ export interface IColumn {
 }
 
 export interface IColumns {
-  [key: string]: IColumn;
+  [name: string]: IColumn;
 }
 
-export interface IMySQLConfig {
-  host: string;
-  port: number;
-  database: string;
-  user: string;
-  password: string;
-  timezone?: string;
-}
-
-export interface IObject {
-  [key: string]: any;
-}
-
-export interface IPostgreSQLConfig {
-  
+export interface IConstraint {
+  tableName: string;
+  columnName: string;
+  referenceTable: string
 }
 
 export interface ITable {
@@ -35,6 +36,40 @@ export interface ITable {
   columns: IColumns;
 }
 
-export interface IRecordTables {
+export interface ITables {
   [name: string]: ITable;
+}
+
+export interface IModelUpdate {
+  obj: any,
+  schema: any,
+}
+
+export interface IModelInsert extends IModelUpdate {
+  fetch?: boolean,
+}
+
+export interface IModelFindOne {
+  where?: IObject;
+  populate?: IModelPopulate[];
+}
+
+export interface IModelSort {
+  column: string;
+  order?: 'asc' | 'desc';
+}
+
+export interface IModelFind extends IModelFindOne {
+  sort?: IModelSort[];
+}
+
+export interface IModelPopulate extends IModelFind {
+  column: string;
+}
+
+export interface IModel {
+  createdAt: Date;
+  updatedAt: Date;
+  deletedAt: Date;
+  id: string;
 }
